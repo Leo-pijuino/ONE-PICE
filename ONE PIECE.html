@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ONE PIECE</title>
+    <style>
+        /* Reinicio global */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Cuerpo */
+        body {
+            background-color: rgb(24, 24, 27);
+            color: rgb(235, 213, 197);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        header {
+            width: 100%;
+            height: 20vh;
+            padding: 10px;
+            position: relative;
+            background-color: rgb(32, 32, 36);
+            border-bottom: 4px solid #0d70cd;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            color: #0d70cd;
+            font-size: 60px;
+            text-align: center;
+            font-family: 'Trebuchet MS', sans-serif;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            width: 120px;
+            float: left;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        /* Barra de navegación */
+        nav {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+
+        nav a {
+            color: rgb(235, 213, 197);
+            font-size: 22px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 25px;
+            padding: 8px 15px;
+            border-radius: 25px;
+            transition: all 0.4s ease;
+            border: 2px solid transparent;
+        }
+
+        nav a:hover {
+            background-color: rgba(13, 112, 205, 0.1);
+            color: #e85860;
+            border-color: #e85860;
+            text-shadow: 1px 1px 4px rgba(232, 88, 96, 0.7);
+        }
+
+        /* Contenido de la sección */
+        .caja {
+            background-color: rgb(48, 51, 54);
+            padding: 30px;
+            margin: 20px 10px;
+            border-radius: 12px;
+            border: 2px solid #333;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #0d70cd;
+            border-bottom: 3px solid #0d70cd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 6px rgba(13, 112, 205, 0.5);
+        }
+
+        .personajes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .personaje {
+            background-color: rgb(36, 36, 40);
+            padding: 15px;
+            margin-bottom: 20px;
+            width: calc(50% - 20px);
+            border-radius: 10px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .personaje:hover {
+            transform: scale(1.05);
+        }
+
+        .personaje h3 {
+            color: #e85860;
+            margin-bottom: 10px;
+        }
+
+        .personaje p {
+            color: rgb(215, 215, 215);
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        /* Centrado de imagen */
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            border: 4px solid #0d70cd;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+            transition: transform 0.4s ease;
+        }
+
+        .center:hover {
+            transform: scale(1.05);
+        }
+
+        /* Pie de página */
+        footer.pie {
+            background-color: rgb(32, 32, 36);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin: 30px 10px;
+            border-radius: 12px;
+            border: 2px solid #0d70cd;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+            font-size: 14px;
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="one2p.png" alt="One Piece Logo" />
+        </div>
+        <h1>ONE PIECE</h1>
+        <nav>
+            <a href="#ini">INICIO</a>
+            <a href="#per">PERSONAJES</a>
+            <a href="#tra">TRAILER</a>
+        </nav>
+    </header>
+
+    <section class="caja">
+        <article id="ini">
+            <h2>INICIO</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis reprehenderit laboriosam in minima deserunt, similique illum nobis, ipsam laborum debitis repellendus, velit hic perspiciatis tenetur architecto dolores eveniet. Pariatur, eos!</p>
+        </article>
+
+        <article id="per">
+            <h2>PERSONAJES</h2>
+            <div class="personajes">
+                <div class="personaje">
+                    <h3>Monkey D. Luffy</h3>
+                    <p>El capitán de los Piratas de Sombrero de Paja, con una recompensa de 3.000.000.000 B, busca convertirse en el Rey de los Piratas. Tiene habilidades elásticas gracias a la fruta del diablo Gomu Gomu.</p>
+                </div>
+
+                <div class="personaje">
+                    <h3>Roronoa Zoro</h3>
+                    <p>Conocido como "El Cazador de Piratas", Zoro es el espadachín de la tripulación y sueña con ser el mejor espadachín del mundo. Recompensa: 1.111.000.000 B.</p>
+                </div>
+
+                <div class="personaje">
+                    <h3>Nami</h3>
+                    <p>La navegante del equipo y una gran estratega. Su objetivo es dibujar un mapa completo del mundo. Recompensa: 366.000.000 B.</p>
+                </div>
+
+                <div class="personaje">
+                    <h3>Usopp</h3>
+                    <p>El francotirador de la tripulación, con una precisión excepcional en su honda. Su recompensa es de 500.000.000 B.</p>
+                </div>
+
+                <div class="personaje">
+                    <h3>Sanji</h3>
+                    <p>El chef del equipo y un luchador increíble con sus piernas. Sueña con encontrar el All Blue. Recompensa: 1.032.000.000 B.</p>
+                </div>
+
+                <div class="personaje">
+                    <h3>Tony Tony Chopper</h3>
+                    <p>El médico reno de la tripulación, con la capacidad de transformarse. Su recompensa es la más baja: 1.000 B.</p>
+                </div>
+            </div>
+            <img src="luffy.webp" alt="Luffy" class="center" />
+        </article>
+
+        <article id="tra">
+            <h2>TRAILER</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis reprehenderit laboriosam in minima deserunt...</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sSovEWQGTwg" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </article>
+    </section>
+
+    <footer class="pie">
+        <p>DERECHOS RESERVADOS © 2024</p>
+    </footer>
+</body>
+</html>
